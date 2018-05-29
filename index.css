@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+body,h4{
+	margin:0;
+	padding:0;
+}
+body{
+	background-image:url(5.jpg);
+}
+
+@font-face{
+	font-family:myFont;
+	src:url('font/方正莎儿硬笔体.ttf');
+}
+
+.main{
+	width:1024px;
+	padding:30px;
+	line-height:1.75em;
+	margin:0 auto;
+	font-family:myFont;
+	color:#333;
+	box-sizing:border-box;
+	
+   /* 在Firefox浏览器中，要加(-moz-)前缀。
+      在Chrome和Safari浏览器中，要加(-webkit-)前缀。
+      对于IE浏览器，只支持IE10以及以上版本。 */
+	-webkit-column-count:2;
+	-webkit-column-width:400px;
+	-webkit-column-gap:100px;
+	-webkit-column-rule:3px solid #ccc;
+	
+	-moz-column-count:2;
+	-moz-column-width:400px;
+	-moz-column-gap:100px;
+	-moz-column-rule:3px solid #CCC;
+	
+	text-indent:2em;/*文本首行缩进2个文字*/
+}
+img{
+	width:400px;
+	height:250px;
+}
+h4{
+	font-size:24px;
+	-webkit-column-span:all;/*设置对象元素横跨所有列*/
+}
+p{
+	font-weight:bold;
+}
+.shadow{
+	font-size:50px;
+	text-shadow:10px 10px 10px #F00;   /*水平距离 垂直距离 模糊半径 颜色*/
+}
